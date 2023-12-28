@@ -332,24 +332,23 @@ button {
   }
 }
 
-/*  */
-
+/* Section */
 .title {
-  font-size: 32px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   padding-left: 10px;
-  text-decoration: underline;
 }
 
 .section-title-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .section-title-wrapper .link {
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
@@ -370,12 +369,9 @@ button {
 
 .movies-list {
   display: flex;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
   margin-top: 30px;
-}
-
-.movies-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .movies-item {
@@ -384,6 +380,10 @@ button {
   padding: 10px;
   display: flex;
   flex-direction: column;
+}
+
+.movies-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .movies-item img {
@@ -456,6 +456,49 @@ button {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .section-title-wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .movies-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .movies-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 32px;
+    text-decoration: underline;
+  }
+
+  .movies-list {
+    margin-top: 30px;
+    flex-wrap: nowrap;
+  }
+
+  .movies-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .movies-item img {
+    object-fit: cover;
+    width: auto;
+    min-width: 100%;
+    height: 300px;
+    border-radius: 12px;
+  }
+}
+
 /* TRENDS */
 .trends {
   padding-top: 0;
@@ -487,8 +530,8 @@ button {
 
 .footer-list {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -506,6 +549,10 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.footer-list .item {
+  margin-bottom: 30px;
 }
 
 .footer-navigation-item:not(:last-child) {
@@ -546,4 +593,13 @@ button {
 
 .footer-contacts-item:not(:last-child) {
   margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
 }
