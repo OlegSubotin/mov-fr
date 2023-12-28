@@ -78,10 +78,66 @@
             </li>
           </ul>
         </nav>
+
+        <div class="mob-wrapper">
+          <a href="./index.html" class="logo-link">
+            <img
+              src="./images/logo.png"
+              alt="Лого вебсайту"
+              width="60px"
+              class="logo"
+            />
+          </a>
+
+          <button type="button" class="burger-button js-burger-button">
+            <img
+              src="./images/header/menu-bar.png"
+              alt="burger bar"
+              width="36x"
+              class="burger-image"
+            />
+          </button>
+
+          <div class="mob-menu js-mobile-menu is-hidden">
+            <button class="close-btn js-cross-button">
+              <img
+                src="./images/header/close.png"
+                alt="cross"
+                width="24px"
+                class="cross-image"
+              />
+            </button>
+            <ul class="list">
+              <li class="item">
+                <a href="./movies.html" class="link">фільми</a>
+              </li>
+              <li class="item">
+                <a href="./cartoons.html" class="link">мультфільми</a>
+              </li>
+
+              <li class="item">
+                <a href="./trends.html" class="link">у тренді</a>
+              </li>
+              <li class="item">
+                <a href="./top-rated.html" class="link">найвищий рейтинг</a>
+              </li>
+              <li class="item">
+                <a href="./advent-calenndar.html" class="link"
+                  >новорічний адвент календар
+                  <img
+                    src="./images/header/santa-hat.png"
+                    width="18px"
+                    alt="Santa hat"
+                    class="link-image"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
-    <section class="section hero">
+    <!-- <section class="section hero">
       <div class="container">
         <h1 class="hero-title">Світ Фільмів і Мультфільмів</h1>
         <p class="text">Розвагайтеся з найкрашим кіно українською</p>
@@ -567,6 +623,7 @@
         <hr />
         <h3 class="copyright">&copy; 2023 dyvys</h3>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./scripts/burger-btn.js" type="module"></script>
   </body>
 </html>
