@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Домашня | Dyvys</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="./images/favicons/apple-touch-icon.png"
@@ -32,8 +44,13 @@
     <header class="header">
       <div class="container">
         <nav class="navigation">
-          <a href="./index.html">
-            <img src="./images/logo.png" alt="Лого вебсайту" width="100px" />
+          <a href="./index.html" class="header-navigation-logo-link">
+            <img
+              src="./images/logo.png"
+              alt="Лого вебсайту"
+              width="100px"
+              class="header-navigation-logo"
+            />
           </a>
           <ul class="list">
             <li class="item">
@@ -42,30 +59,36 @@
             <li class="item">
               <a href="./cartoons.html" class="link">мультфільми</a>
             </li>
-            <li class="item">
-              <a href="./advent-calenndar.html" class="link"
-                >новорічний адвент календар</a
-              >
-            </li>
+
             <li class="item">
               <a href="./trends.html" class="link">у тренді</a>
             </li>
             <li class="item">
               <a href="./top-rated.html" class="link">найвищий рейтинг</a>
             </li>
+            <li class="item">
+              <a href="./advent-calenndar.html" class="link"
+                >новорічний адвент календар
+                <img
+                  src="./images/header/santa-hat.png"
+                  width="24px"
+                  alt="Santa hat"
+                  class="link-image"
+              /></a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section class="hero">
+    <section class="section hero">
       <div class="container">
         <h1 class="title">Фільми, серіали та мультфільми</h1>
         <p class="text">Дивись найкраще українською</p>
       </div>
     </section>
 
-    <section class="calendar">
+    <section class="section calendar">
       <div class="container">
         <h2 class="title">Новорічний адвент календар</h2>
         <a href="./advent-calenndar.html" class="link">Дізнатись більше</a>
@@ -154,7 +177,7 @@
       </div>
     </section>
 
-    <section class="trends">
+    <section class="section trends">
       <div class="container">
         <h2 class="title">У тренді сʼьогодні</h2>
         <a href="./trуnds.html" class="link">Дізнатись більше</a>
@@ -243,7 +266,7 @@
       </div>
     </section>
 
-    <section class="rated">
+    <section class="section rated">
       <div class="container">
         <h2 class="title">Найвищий рейтинг</h2>
         <a href="./top-rated.html" class="link">Дізнатись більше</a>
@@ -332,7 +355,7 @@
       </div>
     </section>
 
-    <section class="cartoons">
+    <section class="section cartoons">
       <div class="container">
         <h2 class="title">Мультфільми</h2>
         <a href="./cartoons.html" class="link">Дізнатись більше</a>
