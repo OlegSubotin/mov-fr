@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мультфільми | Dyvys</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicons/site.webmanifest" />
+    <link
+      rel="icon shortcut"
+      href="./images//favicons/favicon.ico"
+      type="image/ico"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a href="./index.html" class="header-navigation-logo-link">
+            <img
+              src="./images/logo.png"
+              alt="Лого вебсайту"
+              width="100px"
+              class="header-navigation-logo"
+            />
+          </a>
+          <ul class="list">
+            <li class="item">
+              <a href="./movies.html" class="link">фільми</a>
+            </li>
+            <li class="item">
+              <a href="./cartoons.html" class="link active-link">мультфільми</a>
+            </li>
+
+            <li class="item">
+              <a href="./trends.html" class="link">у тренді</a>
+            </li>
+            <li class="item">
+              <a href="./top-rated.html" class="link">найвищий рейтинг</a>
+            </li>
+            <li class="item">
+              <a href="./advent-calenndar.html" class="link"
+                >новорічний адвент календар
+                <img
+                  src="./images/header/santa-hat.png"
+                  width="24px"
+                  alt="Santa hat"
+                  class="link-image"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mob-wrapper">
+          <a href="./index.html" class="logo-link">
+            <img
+              src="./images/logo.png"
+              alt="Лого вебсайту"
+              width="60px"
+              class="logo"
+            />
+          </a>
+
+          <button type="button" class="burger-button js-mobile-menu-toggle">
+            <img
+              src="./images/header/menu-bar.png"
+              alt="burger bar"
+              width="36x"
+              class="burger-image"
+            />
+          </button>
+
+          <div class="mob-menu js-mobile-menu is-hidden">
+            <button class="close-btn js-mobile-menu-close">
+              <img
+                src="./images/header/close.png"
+                alt="cross"
+                width="24px"
+                class="cross-image"
+              />
+            </button>
+            <ul class="list">
+              <li class="item">
+                <a href="./movies.html" class="link">фільми</a>
+              </li>
+              <li class="item">
+                <a href="./cartoons.html" class="link active-link"
+                  >мультфільми</a
+                >
+              </li>
+
+              <li class="item">
+                <a href="./trends.html" class="link">у тренді</a>
+              </li>
+              <li class="item">
+                <a href="./top-rated.html" class="link">найвищий рейтинг</a>
+              </li>
+              <li class="item">
+                <a href="./advent-calenndar.html" class="link"
+                  >новорічний адвент календар
+                  <img
+                    src="./images/header/santa-hat.png"
+                    width="18px"
+                    alt="Santa hat"
+                    class="link-image"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li class="item">
+            <h2 class="footer-title">Навігація</h2>
+            <ul class="footer-navigation-list">
+              <li class="footer-navigation-item">
+                <a href="./movies.html" class="link">фільми</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="./cartoons.html" class="link active-footer-link"
+                  >мультфільми</a
+                >
+              </li>
+              <li class="footer-navigation-item">
+                <a href="./advent-calenndar.html" class="link"
+                  >новорічний адвент календар</a
+                >
+              </li>
+              <li class="footer-navigation-item">
+                <a href="./trends.html" class="link">у тренді</a>
+              </li>
+              <li class="footer-navigation-item">
+                <a href="./top-rated.html" class="link">найвищий рейтинг</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="item">
+            <h2 class="footer-title">Контакти</h2>
+            <ul class="footer-contacts-list">
+              <li class="footer-contacts-item">
+                <a href="#" class="footer-contact-social-link">
+                  <img
+                    src="./images/footer/email.png"
+                    alt="mail"
+                    width="32px"
+                  />
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a href="#" class="footer-contact-social-link">
+                  <img
+                    src="./images/footer/instagram.png"
+                    alt="instagram"
+                    width="32px"
+                  />
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a href="#" class="footer-contact-social-link">
+                  <img
+                    src="./images/footer/telegram.png"
+                    alt="telegram"
+                    width="32px"
+                  />
+                </a>
+              </li>
+              <li class="footer-contacts-item">
+                <a href="#" class="footer-contact-social-link">
+                  <img
+                    src="./images/footer/tiktok.png"
+                    alt="tiktok"
+                    width="32px"
+                  />
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <hr />
+        <h3 class="copyright">&copy; 2024 dyvys</h3>
+      </div>
+    </footer>
+
+    <script src="./scripts/burger-btn.js" type="module"></script>
+  </body>
+</html>
